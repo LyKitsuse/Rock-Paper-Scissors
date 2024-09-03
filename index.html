@@ -6,6 +6,14 @@
   <script src="script.js"></script>
 </head>
 <body>
-  
+  <div class="play_area">
+    <button id="Rock" value="Rock" onclick="game(getComputerChoice(), 'rock')">Rock</button>
+    <button id="Paper" value="Paper" onclick="game(getComputerChoice(), 'paper')">Paper</button>
+    <button id="Scissors" value="Scissors" onclick="game(getComputerChoice(), 'scissors')">Scissors</button>
+  </div>
+  <div class="results">
+    <h3 id="score">0</h3>
+    <h1 id="final_result"></h1>
+  </div>
 </body>
 </html>

@@ -60,17 +60,17 @@ function playRound(player, bot) {
 }
 
 // Plays the Rounds
-function game(computerSelection) {
-  let input = '';
-  input = prompt("Rock, Paper, Scissors (type Cancel to Exit)");
-  if (input.toLowerCase() == 'rock' || input.toLowerCase() == 'paper' || input.toLowerCase() == 'scissors') {
-    playRound(input, computerSelection);
-  }
-  else {
-    alert("Invalid or Wrong Spelling!");
-  }
+function game(computerSelection, input) {
+  playRound(input, computerSelection);
+  
+  // let input = '';
+  // input = prompt("Rock, Paper, Scissors (type Cancel to Exit)");
+  // if (input.toLowerCase() == 'rock' || input.toLowerCase() == 'paper' || input.toLowerCase() == 'scissors') {
+  //   playRound(input, computerSelection);
+  // }
+  // else {
+  //   alert("Invalid or Wrong Spelling!");
+  // }
 }
 
-for (let i = 0; i < 5; i++) {
-  game(getComputerChoice());
-}
+// game(getComputerChoice());
