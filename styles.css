@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.play_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    .play_area button, #reset {
+        padding: 40px 90px;
+        border-radius: 12px;
+        color: darkcyan;
+    }
+
+.results {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+    .score {
+        margin: 30px;
+    }
+
+.verdict {
+    text-align: center;
+}
+

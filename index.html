@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors!</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
 </head>
 <body>
@@ -12,8 +13,18 @@
     <button id="Scissors" value="Scissors" onclick="game(getComputerChoice(), 'scissors')">Scissors</button>
   </div>
   <div class="results">
-    <h3 id="score">0</h3>
+    <div class="score bot">
+      <h2>Bot Score</h2>
+      <h3 id="bot_score">0</h3>
+    </div>
+    <div class="score player">
+      <h2>Player Score</h2>
+      <h3 id="player_score">0</h3>
+    </div>
+  </div>
+  <div class="verdict">
     <h1 id="final_result"></h1>
   </div>
+  <button id="reset" onclick="reset()">Reset</button>
 </body>
 </html>
